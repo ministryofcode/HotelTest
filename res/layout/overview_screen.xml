@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/customer" />
+	
+	    <EditText
+	        android:id="@+id/customer"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text"
+	        android:clickable="false" 
+        	android:cursorVisible="false" 
+        	android:focusable="false" 
+        	android:focusableInTouchMode="false" />
+	</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/roomType" />
+	
+	    <Spinner
+	        android:id="@+id/roomSpinner"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" />
+	</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/service" />
+	
+	    <Spinner
+	        android:id="@+id/serviceSpinner"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" />
+	</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/price" />
+	
+	    <EditText
+	        android:id="@+id/price"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text"
+	        android:clickable="false" 
+        	android:cursorVisible="false" 
+        	android:focusable="false" 
+        	android:focusableInTouchMode="false" />
+	</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="?android:attr/buttonBarStyle" >
+	    <Button
+	        android:id="@+id/abortButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dip"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_weight="0.4"
+	        android:onClick="abort"
+	        android:text="@string/abort" />
+	    
+	    <Button
+	        android:id="@+id/bookingButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dip"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_weight="0.6"
+	        android:onClick="finalize"
+	        android:text="@string/finalBooking" />
+    </LinearLayout>
+   
+</LinearLayout>

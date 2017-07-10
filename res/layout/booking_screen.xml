@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/cstHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/customer"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >   
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/chooseCustomer" />
+
+	    <Spinner
+	        android:id="@+id/customerSpinner"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" />
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/createCstButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="createDialog"
+        android:text="@string/add_new_customer" />
+    
+    <TextView
+        android:id="@+id/roomHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/room"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >   
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/bookedRooms" />
+		<EditText
+	        android:id="@+id/bookedRooms"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="number"
+	        android:cursorVisible="false" 
+        	android:focusable="false" 
+        	android:focusableInTouchMode="false" />	    
+	</LinearLayout>
+	
+    <Button
+        android:id="@+id/createRoomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="onClick"
+        android:text="@string/add_new_room" />
+	
+    <TextView
+        android:id="@+id/serviceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/service"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >   
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/bookedServices" />
+		<EditText
+	        android:id="@+id/bookedServices"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="number"
+	        android:cursorVisible="false" 
+        	android:focusable="false" 
+        	android:focusableInTouchMode="false" />	    
+	</LinearLayout>
+	  
+    <Button
+        android:id="@+id/createServiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="onClick"
+        android:text="@string/add_new_service" />
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="?android:attr/buttonBarStyle" >
+		<Button
+	        android:id="@+id/btnNextScreen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dip"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_weight="0.5"
+	        android:onClick="changeBack"
+	        android:text="@string/back" />
+		
+	    <Button
+	        android:id="@+id/btnNextStep"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dip"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_weight="0.5"
+	        android:onClick="next"
+	        android:text="@string/next" />    
+	    
+    </LinearLayout>
+
+</LinearLayout>

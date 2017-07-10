@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/serviceType" />
+
+	    <EditText
+	        android:id="@+id/serviceType"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text">
+	    <requestFocus />
+	    </EditText>
+	</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/price" />
+	
+	   <EditText
+	        android:id="@+id/servicePrice"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="number" />
+
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    style="?android:attr/buttonBarStyle" >
+	   		<Button
+		        android:id="@+id/btnNextScreen"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="10dip"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:layout_weight="0.5"
+		        android:onClick="changeBack"
+		        android:text="@string/back" />
+	   		
+		    <Button
+		        android:id="@+id/btnInputService"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="10dip"
+		        style="?android:attr/buttonBarButtonStyle"
+		        android:layout_weight="0.5"
+		        android:onClick="input"
+		        android:text="@string/input" />		    
+		    
+	    </LinearLayout>
+
+</LinearLayout>

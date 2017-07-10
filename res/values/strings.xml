@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hotel System</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Enter a Message</string>
+    <string name="button_send">Senden</string>
+    <string name="title_activity_display_message">MyMessage</string>
+    <string name="hello">Hello world!</string>
+    <string name="add_new">Hinzufügen</string>
+    <string name="delete">Löschen</string>
+    <string name="next_screen">Weiter</string>
+    <string name="name">Name:</string>
+    <string name="vorname">Vorname:</string>
+    <string name="email">E-Mail Adresse:</string>
+    <string name="back">Zurück</string>
+    <string-array name="title">
+        <item >Herr</item>
+        <item >Frau</item>
+    </string-array>
+    <string name="title">Anrede:</string>
+    <string name="street">Str.</string>
+    <string name="number">Nr.</string>
+    <string name="plz">PLZ:</string>
+    <string name="city">Ort:</string>
+    <string name="bdate">Geb.Dat.:</string>
+    <string name="plzhint">12345</string>
+    <string name="numberhint">1234</string>
+    <string name="input">Daten Einfügen</string>
+    <string name="welcome">Herzlich Willkommen</string>
+    <string name="create">Datensätze anlegen:</string>
+    <string name="customer">Kunde</string>
+    <string name="room">Hotelzimmer</string>
+    <string name="service">Dienstleistung</string>
+    <string name="booking">Buchung durchführen</string>
+    <string name="showAllCustomers">Kunden</string>
+    <string name="roomType">Zimmer-Typ:</string>
+    <string-array name="rooms">
+        <item >Einzelzimmer</item>
+        <item >Doppelzimmer</item>
+    </string-array>
+    <string name="price">Preis:</string>
+    <string name="roomNumber">Zimmernummer:</string>
+    <string name="optional">Optional</string>
+    <string name="serviceType">Dienstleistungsart:</string>
+    <string name="succesfulInsert">Daten erfolgreich eingetragen</string>
+    <string name="customerId">Kundennummer: (nicht änderbar)</string>
+    <string name="update">Speichern</string>
+    <string name="succesfulUpdate">Daten erfolgreich bearbeitet</string>
+    <string name="chooseCustomer">Kunde auswählen:</string>
+    <string name="chooseRoom">Zimmertyp auswählen:</string>
+    <string name="dateFrom">Anreisedatum:</string>
+    <string name="dateTo">Abreisedatum:</string>
+    <string name="next">Weiter</string>
+    <string name="add_new_customer">Neuen Kunden Hinzufügen</string>
+    <string name="addService">Dienstleistung Hinzufügen</string>
+    <string name="date">Datum:</string>
+    <string name="abort">Abbrechen</string>
+    <string name="finalBooking">Buchung durchführen</string>
+    <string name="finish">Buchung abschließen</string>
+    <string name="duration">Anzahl Übernachtungen:</string>
+    <string name="succesfulBooking">Buchung erfolgreich durchgeführt!</string>
+    <string name="showAllBookings">Buchungen</string>
+    <string name="pressLong">Für weitere Optionen gedrückt halten.</string>
+    <string name="fullDelete">Löschen (ohne weitere Nachfrage)</string>
+    <string name="addRoom">Zimmer Hinzufügen</string>
+    <string name="bookedRooms">Gewählte Zimmer:</string>
+    <string name="bookedServices">Gewählte Dienstleistungen:</string>
+    <string name="add_new_room">Hotelzimmer wählen</string>
+    <string name="add_new_service">Dienstleistung wählen</string>
+    <string name="show">Datensätze anzeigen:</string>
+</resources>

@@ -1,0 +1,287 @@
+Found a 9 line (60 tokens) duplication in the following files: 
+Starting at line 81 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ServiceActivity.java
+Starting at line 69 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/OverviewActivity.java
+
+	    setContentView(R.layout.service_screen);
+	    
+	    i = getIntent();
+		cstId = i.getLongExtra("cstId", 0);
+		cstName = i.getStringExtra("cstName");
+		roomId = i.getLongExtra("roomId", 0);
+		roomType = i.getStringExtra("roomType");
+		roomPrice = i.getIntExtra("roomPrice", 0);
+		from = i.getStringExtra("dateComing");
+=====================================================================
+Found a 26 line (55 tokens) duplication in the following files: 
+Starting at line 157 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ServiceActivity.java
+Starting at line 203 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/BookingActivity.java
+
+		final Intent next = new Intent(getApplicationContext(), BookingActivity.class);		
+		startActivity(next);
+	}	
+	@Override
+	protected void onResume() {
+		datasource.open();
+		super.onResume();
+	}	
+	@Override
+	protected void onPause() {
+		datasource.close();
+		super.onPause();
+	}
+	// -------------------------------------------------------------------------
+	//	 _   _           _           _  ____ _               
+	//	| \ | | ___  ___| |_ ___  __| |/ ___| | __ _ ___ ___ 
+	//	|  \| |/ _ \/ __| __/ _ \/ _` | |   | |/ _` / __/ __|
+	//	| |\  |  __/\__ \ ||  __/ (_| | |___| | (_| \__ \__ \
+	//	|_| \_|\___||___/\__\___|\__,_|\____|_|\__,_|___/___/
+	//
+	/**
+	 * Nested class which loads a DialogFragment which contains the DatePicker.
+	 * @author Lutsch
+	 *
+	 */
+	public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+=====================================================================
+Found a 10 line (54 tokens) duplication in the following files: 
+Starting at line 153 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 181 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+
+		allFields[2] = roomPr.getText().toString();
+		
+		for(String field: allFields) {
+			if(field.trim().equals("")) {
+				Toast.makeText(this, "Bitte alle Felder ausfüllen", Toast.LENGTH_SHORT).show();
+				return;
+			}
+		}
+		
+		boolean success = datasource.insertRoom(allFields[0], Integer.parseInt(allFields[2]), Integer.parseInt(allFields[1]));
+=====================================================================
+Found a 14 line (49 tokens) duplication in the following files: 
+Starting at line 51 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/objects/Customer.java
+Starting at line 92 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/objects/Booking.java
+
+	}
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+	public String getStreet() {
+=====================================================================
+Found a 8 line (49 tokens) duplication in the following files: 
+Starting at line 118 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 153 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 181 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+
+		allFields[7] = bdateText.getText().toString();
+		
+		for(String field: allFields) {
+			if(field.trim().equals("")) {
+				Toast.makeText(this, "Bitte alle Felder ausfüllen", Toast.LENGTH_SHORT).show();
+				return;
+			}
+		}
+=====================================================================
+Found a 13 line (46 tokens) duplication in the following files: 
+Starting at line 157 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ServiceActivity.java
+Starting at line 208 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+
+		final Intent next = new Intent(getApplicationContext(), BookingActivity.class);		
+		startActivity(next);
+	}	
+	@Override
+	protected void onResume() {
+		datasource.open();
+		super.onResume();
+	}	
+	@Override
+	protected void onPause() {
+		datasource.close();
+		super.onPause();
+	}
+=====================================================================
+Found a 14 line (45 tokens) duplication in the following files: 
+Starting at line 149 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ShowAllActivity.java
+Starting at line 125 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/EditActivity.java
+
+		final Intent lastScreen = new Intent(getApplicationContext(), MainActivity.class);
+		startActivity(lastScreen);
+	}	
+	@Override
+	protected void onResume() {
+		datasource.open();
+		super.onResume();
+	}	
+	@Override
+	protected void onPause() {
+		datasource.close();
+		super.onPause();
+	}
+}
+=====================================================================
+Found a 13 line (45 tokens) duplication in the following files: 
+Starting at line 39 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/ServiceTable.java
+Starting at line 38 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/RoomTable.java
+Starting at line 65 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/CustomerTable.java
+
+		 createEmptyService(database);
+	 }
+    /**
+     * Upgrades Database. First Table will be deleted the newly created.
+     * @param db
+     * @param oldVersion
+     * @param newVersion
+     */
+	public static void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		Log.w(MySQLiteHelper.class.getName(),
+			"Upgrading database from version " + oldVersion + " to "
+			+ newVersion + ", which will destroy all old data");
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_SERVICE);
+=====================================================================
+Found a 14 line (44 tokens) duplication in the following files: 
+Starting at line 208 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 203 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/BookingActivity.java
+
+			next.setClass(getApplicationContext(), MainActivity.class);
+		
+		startActivity(next);
+	}	
+	@Override
+	protected void onResume() {
+		datasource.open();
+		super.onResume();
+	}	
+	@Override
+	protected void onPause() {
+		datasource.close();
+		super.onPause();
+	}
+=====================================================================
+Found a 13 line (41 tokens) duplication in the following files: 
+Starting at line 150 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ShowAllActivity.java
+Starting at line 126 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/EditActivity.java
+Starting at line 210 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+
+		startActivity(lastScreen);
+	}	
+	@Override
+	protected void onResume() {
+		datasource.open();
+		super.onResume();
+	}	
+	@Override
+	protected void onPause() {
+		datasource.close();
+		super.onPause();
+	}
+}
+=====================================================================
+Found a 12 line (40 tokens) duplication in the following files: 
+Starting at line 150 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ShowAllActivity.java
+Starting at line 158 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ServiceActivity.java
+Starting at line 135 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/OverviewActivity.java
+Starting at line 126 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/EditActivity.java
+Starting at line 210 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 204 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/BookingActivity.java
+
+		startActivity(lastScreen);
+	}	
+	@Override
+	protected void onResume() {
+		datasource.open();
+		super.onResume();
+	}	
+	@Override
+	protected void onPause() {
+		datasource.close();
+		super.onPause();
+	}
+=====================================================================
+Found a 4 line (39 tokens) duplication in the following files: 
+Starting at line 162 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 190 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+
+		boolean success = datasource.insertRoom(allFields[0], Integer.parseInt(allFields[2]), Integer.parseInt(allFields[1]));
+		
+		if(success) {
+			Toast.makeText(this, getString(R.string.succesfulInsert), Toast.LENGTH_SHORT).show();
+=====================================================================
+Found a 7 line (34 tokens) duplication in the following files: 
+Starting at line 314 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/DatabaseHandler.java
+Starting at line 401 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/DatabaseHandler.java
+
+		final Cursor cursor = database.rawQuery(getFreeRoomId, null);
+		
+		if(cursor.getCount() == 0) {
+			retVal = null;
+		} else {
+			cursor.moveToFirst();
+			retVal = new Room(cursor.getLong(9), cursor.getString(10), cursor.getInt(11), cursor.getInt(12));
+=====================================================================
+Found a 5 line (32 tokens) duplication in the following files: 
+Starting at line 47 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/ServiceTable.java
+Starting at line 46 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/RoomTable.java
+Starting at line 73 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/CustomerTable.java
+Starting at line 78 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/database/BookingTable.java
+
+	public static void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		Log.w(MySQLiteHelper.class.getName(),
+			"Upgrading database from version " + oldVersion + " to "
+			+ newVersion + ", which will destroy all old data");
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_SERVICE);
+=====================================================================
+Found a 4 line (29 tokens) duplication in the following files: 
+Starting at line 131 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 162 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+Starting at line 190 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/CreateActivity.java
+
+		boolean success = datasource.insertCustomer(valuesToInsert);
+		
+		if(success) {
+			Toast.makeText(this, getString(R.string.succesfulInsert), Toast.LENGTH_SHORT).show();
+=====================================================================
+Found a 20 line (26 tokens) duplication in the following files: 
+Starting at line 43 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/ServiceActivity.java
+Starting at line 35 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/guihandler/OverviewActivity.java
+
+public class ServiceActivity extends FragmentActivity {
+    // -------------------------------------------------------------------------
+    //   ___  ___    _ ___ ___ _______   ___   ___
+    //  / _ \| _ )_ | | __/ __|_   _\ \ / /_\ | _ \___
+    // | (_) | _ \ || | _| (__  | |  \ V / _ \|   (_-<
+    //  \___/|___/\__/|___\___| |_|   \_/_/ \_\_|_|__/
+    //
+	DatabaseHandler datasource;
+	Spinner serviceSpinner;
+	List<Service> serviceList;
+	
+	// Variables to read from Intent
+	Intent i;
+	long cstId;
+	String cstName;
+	long roomId;
+	String roomType;
+	int roomPrice;
+	String from;
+	String to;
+=====================================================================
+Found a 7 line (25 tokens) duplication in the following files: 
+Starting at line 33 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/objects/Service.java
+Starting at line 40 of /Developer/adt-bundle-mac-x86_64-20130917/workspace/MyFirstApp/src/com/example/myfirstapp/objects/Customer.java
+
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getType() {

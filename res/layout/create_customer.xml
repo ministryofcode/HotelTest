@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/title" />
+
+	    <Spinner
+	        android:id="@+id/titleSpinner"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:entries="@array/title" />
+	</LinearLayout>
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/name" />
+	
+	    <EditText
+	        android:id="@+id/name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text">
+	    <requestFocus />
+	    </EditText>
+	</LinearLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/vorname" />
+	
+	    <EditText
+	        android:id="@+id/vorname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text" />
+	</LinearLayout>
+	
+    <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="1" >
+    
+	    <TextView
+	        
+	        android:layout_margin="5dp"
+	        android:text="@string/street" />
+	
+	    <EditText
+	        android:id="@+id/street"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text" />
+	    
+	    <TextView
+	        
+	        android:layout_margin="5dp"
+	        android:text="@string/number" />
+	
+	    <EditText
+	        android:id="@+id/number"
+	        android:hint="@string/numberhint"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="number"
+	        android:maxLength="4" />
+	</GridLayout>
+	
+    <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="1" >
+    
+	    <TextView	        
+	        android:layout_margin="5dp"
+	        android:text="@string/plz" />
+	
+	    <EditText
+	        android:id="@+id/plz"
+	        android:layout_width="wrap_content"
+	        android:layout_gravity="left"
+	        android:layout_marginBottom="10dip"
+	        android:hint="@string/plzhint"
+	        android:inputType="number"
+	        android:maxLength="5" />
+	    
+	    <TextView
+	        
+	        android:layout_margin="5dp"
+	        android:text="@string/city" />
+	
+	    <EditText
+	        android:id="@+id/city"
+	        android:layout_gravity="fill_horizontal"
+	        android:layout_marginBottom="10dip"
+	        android:inputType="text" />
+	</GridLayout>
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:text="@string/bdate" />
+	
+	    <EditText
+	        android:id="@+id/bdate"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dip"
+	        android:ems="10"
+	        android:inputType="date" />
+	</LinearLayout>   
+	
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="?android:attr/buttonBarStyle" >
+	    <Button
+	        android:id="@+id/btnNextScreen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dip"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_weight="0.5"
+	        android:onClick="changeBack"
+	        android:text="@string/back" />
+	    
+	    <Button
+	        android:id="@+id/btnInputCustomer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dip"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_weight="0.5"
+	        android:onClick="input"
+	        android:text="@string/input" />	    
+	    
+    </LinearLayout>    
+
+</LinearLayout>
